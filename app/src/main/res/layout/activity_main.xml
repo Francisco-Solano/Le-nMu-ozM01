@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#373232"
-    tools:context=".MainActivity">
+    tools:context=".ContadorActivity">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/textoContador"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_bold"
@@ -23,7 +23,7 @@
         app:layout_constraintVertical_bias="0.148" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/numero"
         android:layout_width="116dp"
         android:layout_height="243dp"
         android:fontFamily="@font/poppins_extralight"
@@ -38,25 +38,23 @@
         app:layout_constraintVertical_bias="0.588" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/botonMas"
         android:layout_width="102dp"
         android:layout_height="49dp"
         android:layout_marginTop="18dp"
-        android:layout_marginEnd="32dp"
         android:backgroundTint="#1B1B1B"
         android:fontFamily="@font/poppins_bold"
         android:text="+"
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/button2"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintEnd_toStartOf="@+id/botonReset"
+        app:layout_constraintHorizontal_bias="0.403"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.21" />
+        app:layout_constraintTop_toBottomOf="@+id/numero"
+        app:layout_constraintVertical_bias="0.194" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/botonReset"
         android:layout_width="102dp"
         android:layout_height="49dp"
         android:layout_marginTop="21dp"
@@ -69,11 +67,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.335" />
+        app:layout_constraintTop_toBottomOf="@+id/numero"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/botonMenos"
         android:layout_width="102dp"
         android:layout_height="49dp"
         android:layout_marginStart="17dp"
@@ -84,14 +82,14 @@
         android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.568"
-        app:layout_constraintStart_toEndOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="@+id/button2"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.199" />
+        app:layout_constraintHorizontal_bias="0.805"
+        app:layout_constraintStart_toEndOf="@+id/botonReset"
+        app:layout_constraintStart_toStartOf="@+id/botonReset"
+        app:layout_constraintTop_toBottomOf="@+id/numero"
+        app:layout_constraintVertical_bias="0.169" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textoByNombre"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="@font/poppins_extralight"
