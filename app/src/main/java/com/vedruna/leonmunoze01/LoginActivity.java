@@ -30,6 +30,7 @@ public class LoginActivity extends AppCompatActivity {
             mensaje.setText("Usuario o contraseña incorrecta");
         } else {
             mensaje.setText("Usuario y contraseña correcta");
+
             Intent intent = new Intent(this, ContadorActivity.class);
             intent.putExtra("valor", nombre.getText().toString()); // Obtener el texto del EditText y convertirlo a String
             startActivity(intent);

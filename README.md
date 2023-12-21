@@ -24,6 +24,10 @@ El texto de abajo del todo esta respecto a todos los lados de la pantalla para m
 
 
 
+EJERCICIO 2
+
+Crea la segunda pantalla en el mismo proyecto(investiga como). Deberás realizar un lógin tal y como se muestra en el figma, en el caso de que el usuario y contraseña sean admin en el TextView de abajo saldrá “Usuario y contraseña correcta” en caso contrario “Usuario o contraseña incorrecta”. Investigar por vuestra cuenta como iniciar la aplicación en la Activity login. Pista → se configura en el AndroidManifest.xml. Una vez que iniciemos el login deberá pasar a la pantalla del contador pasando el dato del nombre del usuario (aparecerá en la parte baja de la pantalla de contador donde ponía “by nombre_alumno”).(ACTUALIZADO)
+
 EXPLICACION DE LA IMAGEN LOGIN
 
 [![Captura-de-pantalla-2023-12-19-155006.png](https://i.postimg.cc/XJBH385B/Captura-de-pantalla-2023-12-19-155006.png)](https://postimg.cc/47ZbQpBX)
