@@ -47,7 +47,15 @@ Texto de abajo del todo: Constraint respecto a todos los lados de la pantalla y 
 
 
 
+
+
+
+
+
+
+
 EJERCICIO 3
+
 Cambia el proyecto para que el segundo activity en vez de ser el contador sea un activity con un FrameLayout en el que se verán los diferentes fragments (mínimo home, contador, salir) y por otra parte una barra de navegación con la que podamos viajar entre los diferentes fragments.
 
 Para este ejercicio he creado un nuevo activity al que he llamado MenuActivity que es el que muestra la barra de navegacion con los diferentes items dentro del menu. Cada item lleva al fragment correspondiente. En este caso todos estan en blanco excepto el del contador que lleva al contador que hemos realizado en las anteriores actividades.
