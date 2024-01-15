@@ -83,10 +83,12 @@ Primero cree una carpeta llamada navigation en la que iba mi archivo nav_graph.x
 
 También cree una carpeta llamada menu en el que va mi archivo bottom_navigation_menu que se encarga se introducir los items dentro del menu y representa la estructura grafica de la aplicacion, el orden en el que se ven los iconos y la forma en la que el usuario los va a ver.
 
-despues tengo una clase para cada fragment con su archivo .xml correspondiente. Practicamente el interior de todos tienen lo que escribe el editor de texto automaticamente cuando se crean ya que este ejercicio no pide rellenar esos fragments. El unico que si tiene contenido es el del contador ya que en su xml del fragment se ha escrito lo que tenia antes cuando era un activity. en la clase ContadorFragment se han añadido elementos como  return inflater.inflate(R.layout.fragment_dashboard_, container, false); en el create view para que se pueda relacionar con los otros fragments y se pueda navegar entre los items del menu.
-
-Practicamente todos los fragments tienen sus bases de cuando se crean excepto el xml del contador como he mencionado antes. Para poder relacionarlos he utilizado en navGraph la opcion de relacionarlos utilizando las flechas de la interfaz grafica. De esta manera se puede navegar entre los diferentes items.
+despues tengo una clase para cada fragment con su archivo .xml correspondiente. Practicamente el interior de todos tienen lo que escribe el editor de texto automaticamente cuando se crean ya que este ejercicio no pide rellenar esos fragments. El unico que si tiene contenido es el del contador ya que en su xml del fragment se ha escrito lo que tenia antes cuando era un activity. 
 
 
+Para vincular los fragments en mi activityMenu he copiado el trozo de codigo proporcionado en el notion modificando la ruta a la mia, lo mismo para la navigation_bar.
 
+Despues en el MenuActivity para hacer que dependiendo del icono que pulse el usuario lleve a un fragment u otro e utilizado setOnItemSelectedListener(item -> { para decir que si el itemID es igual al de cada uno de los fragments se utilice el método navigate para navegar a ese fragment especifico.
+
+Por añadir algo más, prácticamente todos los fragments tienen sus bases de cuando se crean excepto el xml del contador como he mencionado antes. Para poder relacionarlos he utilizado en navGraph la opcion de relacionarlos utilizando las flechas de la interfaz grafica. 
 
