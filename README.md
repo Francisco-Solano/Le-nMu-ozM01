@@ -47,3 +47,38 @@ Texto de abajo del todo: Constraint respecto a todos los lados de la pantalla y 
 
 
 
+EJERCICIO 3
+Cambia el proyecto para que el segundo activity en vez de ser el contador sea un activity con un FrameLayout en el que se verán los diferentes fragments (mínimo home, contador, salir) y por otra parte una barra de navegación con la que podamos viajar entre los diferentes fragments.
+
+Para este ejercicio he creado un nuevo activity al que he llamado MenuActivity que es el que muestra la barra de navegacion con los diferentes items dentro del menu. Cada item lleva al fragment correspondiente. En este caso todos estan en blanco excepto el del contador que lleva al contador que hemos realizado en las anteriores actividades.
+
+A continuacion adjunto las imagenes he iré explicando como he conseguido llegar al resultado final
+
+[![home.png](https://i.postimg.cc/PrRxWcVD/home.png)](https://postimg.cc/VdXm178s)
+
+
+
+
+[![contador.png](https://i.postimg.cc/Y9R2hymh/contador.png)](https://postimg.cc/vg1wKhhs)
+
+
+
+
+[![salir.png](https://i.postimg.cc/wxWTzZpr/salir.png)](https://postimg.cc/bdtjH6d0)
+
+
+
+
+Como se puede ver en las imagenes dependiendo de qué icono selecciones en la barra te lleva a un diferente fragment. 
+
+Primero cree una carpeta llamada navigation en la que iba mi archivo nav_graph.xml que se encargaria de definir la estructura y el flujo de navegación de la aplicación  utilizando el componente de navegación de Android. Este archivo se encarga de describir los fragmentos y las acciones de navegación entre ellos.
+
+También cree una carpeta llamada menu en el que va mi archivo bottom_navigation_menu que se encarga se introducir los items dentro del menu y representa la estructura grafica de la aplicacion, el orden en el que se ven los iconos y la forma en la que el usuario los va a ver.
+
+despues tengo una clase para cada fragment con su archivo .xml correspondiente. Practicamente el interior de todos tienen lo que escribe el editor de texto automaticamente cuando se crean ya que este ejercicio no pide rellenar esos fragments. El unico que si tiene contenido es el del contador ya que en su xml del fragment se ha escrito lo que tenia antes cuando era un activity. en la clase ContadorFragment se han añadido elementos como  return inflater.inflate(R.layout.fragment_dashboard_, container, false); en el create view para que se pueda relacionar con los otros fragments y se pueda navegar entre los items del menu.
+
+Practicamente todos los fragments tienen sus bases de cuando se crean excepto el xml del contador como he mencionado antes. Para poder relacionarlos he utilizado en navGraph la opcion de relacionarlos utilizando las flechas de la interfaz grafica. De esta manera se puede navegar entre los diferentes items.
+
+
+
+

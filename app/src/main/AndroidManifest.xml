@@ -12,22 +12,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LeonMuñozE01"
         tools:targetApi="31">
-
+        <activity
+            android:name=".MenuActivity"
+            android:exported="false" />
         <!-- LoginActivity as the Launcher Activity -->
         <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-
-        <!-- MainActivity -->
-        <activity
-            android:name=".ContadorActivity"
-            android:exported="false"/>
-
+        </activity> <!-- MainActivity -->
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />

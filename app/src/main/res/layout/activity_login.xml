@@ -52,6 +52,7 @@
         android:fontFamily="@font/poppins_light"
         android:hint="Contraseña"
         android:inputType="textPassword"
+        android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
