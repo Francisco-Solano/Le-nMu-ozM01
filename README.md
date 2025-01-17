@@ -1,10 +1,10 @@
-﻿\# EJERCICIO 01
-
-Deberás recrear en android la aplicación del contador que se os proporciona. El diseño se os pasará por figma (abajo teneis el enlace). En este primer ejercicio solo debes hacer la parte visual, nada de lógica. Asegurate de que el resultado final sea identico al proporcionado, en tu criterio queda elegir el o los tipos de layouts que utilizarás. Mediante figma obtén el tipo de fuente, colores etc que debes utilizar en tu aplicación.
-
+﻿## Prueba Android
+He creado una aplicacion de un contador para poner en práctica mis habilidades de Android.
 
 
-EXPLICACION DE LA IMAGEN CONTADOR
+
+
+## EXPLICACION DE LA IMAGEN CONTADOR
 
 [![Ejercicio-M01.png](https://i.postimg.cc/63qcchc1/Ejercicio-M01.png)](https://postimg.cc/ft4YTm6x)
 
@@ -24,11 +24,7 @@ El texto de abajo del todo esta respecto a todos los lados de la pantalla para m
 
 
 
-EJERCICIO 2
-
-Crea la segunda pantalla en el mismo proyecto(investiga como). Deberás realizar un lógin tal y como se muestra en el figma, en el caso de que el usuario y contraseña sean admin en el TextView de abajo saldrá “Usuario y contraseña correcta” en caso contrario “Usuario o contraseña incorrecta”. Investigar por vuestra cuenta como iniciar la aplicación en la Activity login. Pista → se configura en el AndroidManifest.xml. Una vez que iniciemos el login deberá pasar a la pantalla del contador pasando el dato del nombre del usuario (aparecerá en la parte baja de la pantalla de contador donde ponía “by nombre_alumno”).(ACTUALIZADO)
-
-EXPLICACION DE LA IMAGEN LOGIN
+## EXPLICACION DE LA IMAGEN LOGIN
 
 [![Captura-de-pantalla-2023-12-19-155006.png](https://i.postimg.cc/XJBH385B/Captura-de-pantalla-2023-12-19-155006.png)](https://postimg.cc/47ZbQpBX)
 
@@ -46,19 +42,7 @@ Texto de abajo del todo: Constraint respecto a todos los lados de la pantalla y 
 
 
 
-
-
-
-
-
-
-
-
-EJERCICIO 3
-
-Cambia el proyecto para que el segundo activity en vez de ser el contador sea un activity con un FrameLayout en el que se verán los diferentes fragments (mínimo home, contador, salir) y por otra parte una barra de navegación con la que podamos viajar entre los diferentes fragments.
-
-Para este ejercicio he creado un nuevo activity al que he llamado MenuActivity que es el que muestra la barra de navegacion con los diferentes items dentro del menu. Cada item lleva al fragment correspondiente. En este caso todos estan en blanco excepto el del contador que lleva al contador que hemos realizado en las anteriores actividades.
+Ahora he creado un nuevo activity al que he llamado MenuActivity que es el que muestro la barra de navegacion con los diferentes items dentro del menu. Cada item lleva al fragment correspondiente. En este caso todos estan en blanco excepto el del contador que lleva al contador que hemos realizado en las anteriores fases.
 
 A continuacion adjunto las imagenes he iré explicando como he conseguido llegar al resultado final
 
